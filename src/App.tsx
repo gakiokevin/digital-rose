@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, VolumeX, Star, Heart } from 'lucide-react';
-import queen from './assets/queen.jpeg'
-import queen2 from './assets/queen2.jpeg'
-import rose1 from './assets/rose2.jpg'
-import rose from './assets/rose.jpg'
+
 import MESSAGES from './messages'
 
 // Configuration for the name
@@ -11,9 +8,9 @@ const NAME = "ESTHER"; // Using the name from your previous setup
 
 const INTRO_IMAGES = [
   "https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=800&auto=format&fit=crop",
-  queen,
-  rose1,
-  queen2,
+  "/queen.jpeg",
+  "/rose2.jpg",
+  "/queen2.jpeg"
 ];
 
 function App() {
@@ -218,6 +215,7 @@ src="/memories.mp3"
               <img
                 src={src}
                 alt={`Intro ${index + 1}`}
+                loading='lazy'
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30" />
@@ -237,7 +235,8 @@ src="/memories.mp3"
           >
             <div className="relative cursor-pointer group">
               <img
-src={rose}                alt="Rose"
+src="/rose.jpg"    
+loading='lazy'            alt="Rose"
                 className="w-48 h-48 object-cover rounded-full shadow-lg transform group-hover:scale-105 transition-transform"
               />
               <Heart
