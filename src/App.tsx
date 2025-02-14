@@ -9,7 +9,7 @@ const NAME = "ESTHER"; // Using the name from your previous setup
 const INTRO_IMAGES = [
   "https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=800&auto=format&fit=crop",
   "/queen.jpeg",
-  "/rose2.jpg",
+  "https://images.unsplash.com/photo-1439122955805-cbac26b73f3b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dc",
   "/queen2.jpeg"
 ];
 
