@@ -12,7 +12,7 @@ const INTRO_IMAGES = [
   "https://images.unsplash.com/photo-1439122955805-cbac26b73f3b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dc",
   "/queen2.jpeg"
 ];
-const rose ="/rose.jpg"
+
 
 function App() {
   const [stars, setStars] = useState<{ x: number; y: number; delay: number; opacity: number }[]>([]);
@@ -236,7 +236,7 @@ src="/memories.mp3"
           >
             <div className="relative cursor-pointer group">
               <img
-src={rose}    
+src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?q=80&w=1402&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
 loading='lazy'            alt="Rose"
                 className="w-48 h-48 object-cover rounded-full shadow-lg transform group-hover:scale-105 transition-transform"
               />
