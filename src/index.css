@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); filter: drop-shadow(0 0 2px rgba(254, 240, 138, 0.3)); }
+  50% { transform: translate(-50%, -50%) scale(1.1); filter: drop-shadow(0 0 8px rgba(254, 240, 138, 0.6)); }
+  100% { transform: translate(-50%, -50%) scale(1); filter: drop-shadow(0 0 2px rgba(254, 240, 138, 0.3)); }
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
